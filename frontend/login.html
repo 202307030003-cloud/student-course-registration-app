@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | KU Course Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bg-light">
+    <div class="auth-wrapper">
+        <div class="card auth-card shadow-lg">
+            <div class="text-center auth-header">
+                <a href="/" class="logo text-dark">
+                    <span class="ku-accent">KU</span> Portal
+                </a>
+                <h2>Welcome Back</h2>
+                <p>Login to your account to continue</p>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="john@student.karnavati.edu" required>
+                    <small class="error-text" id="emailError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+                    <small class="error-text" id="passwordError"></small>
+                </div>
+                <div id="loginAlert" class="alert alert-danger hidden"></div>
+                <button type="submit" class="btn btn-primary btn-block btn-lg shadow-hover mt-3" id="loginBtn">Login to Portal</button>
+            </form>
+            <p class="text-center mt-4">Don't have an account? <a href="/register.html" class="ku-accent font-weight-bold">Sign up</a></p>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
